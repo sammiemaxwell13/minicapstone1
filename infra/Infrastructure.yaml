@@ -41,3 +41,10 @@ Outputs:
   SecurityGroupId:
     Value: !Ref EC2InstanceSecurityGroup
     Description: ID of the created security group
+
+
+
+
+
+
+
