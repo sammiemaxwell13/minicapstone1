@@ -16,7 +16,7 @@ Resources:
 EC2Instance:
   Type: AWS::EC2::Instance
   Properties:
-    ImageID: ami-0c94855ba95c71c99 # Amazon Linux 2 AMI ID
+    ImageId: ami-0c94855ba95c71c99 # Amazon Linux 2 AMI ID
     InstanceType: t2.micro
     KeyName: vockey # Key pair name
     SecurityGroupIds:
@@ -26,7 +26,7 @@ EC2Instance:
       Ebs:
         VolumeSize: '20' # 20GB volume size
         VolumeType: gp2
-   UserData:
+    UserData:
      Fn::Base64: !Sub |
        #!/bin/bash
        yum update -y
